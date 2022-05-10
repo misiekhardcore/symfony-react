@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "react/require-default-props": "off",
+    "prettier/prettier": "warn",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-new": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "max-classes-per-file": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
+  },
+  "ignorePatterns": [
+    "**/__test__/**/*.*",
+    "**/__tests__/**/*.*",
+    "src/generated/*.*",
+    "build"
+  ]
+}
